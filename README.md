@@ -1,2 +1,18 @@
-# Landind-Page-Casa-do_Sorvete
-Landing page moderna construída com HTML5, CSS3 e JavaScript puro. Implementação de design responsivo, animações com Animate.css e carrossel de produtos otimizado.
+# 🍦 Casa do Sorvete - Landing Page
+
+Projeto de site institucional e de vendas para a **Casa do Sorvete**, localizada no Maranhão.
+
+## 🚀 Tecnologias
+- HTML5
+- CSS3 (Flexbox e Grid)
+- JavaScript Nativo
+- Animate.css (para animações de entrada)
+
+## 🛠️ Funcionalidades
+- [x] Design 100% responsivo (Mobile First).
+- [x] Carrossel interativo de produtos.
+- [x] Seção de FAQ otimizada.
+- [x] Integração com canais de atendimento.
+
+## 🌐 Deploy
+O projeto pode ser visualizado em: [Link da Vercel aqui]
