@@ -347,7 +347,20 @@ img {
     transform: rotate(45deg); /* Opcional: gira o + para virar um x ou você pode trocar o texto */
 }
 
+.img-hero-content {
+    max-width: 60%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.img-hero-content img {
+    width: 100%;
+    height: auto;
+
+}
 
 .btn-contato:hover { background: #d0d0d0; }
 
@@ -444,5 +457,4 @@ footer { padding: 20px; font-size: 0.8rem; }
     .hero-section { text-align: center; padding: 40px 0; }
     .hero-text h1 { font-size: 2rem; }
     .hero-btns { justify-content: center; flex-direction: column; }
-    .hero-content { flex-direction: column-reverse; }
 }
