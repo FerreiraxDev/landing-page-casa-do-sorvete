@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa do Sorvete</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">INÍCIO</a></li>
+                <li><a href="#produtos">NOSSOS PRODUTOS</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main class="container">
+
+        <section  id="inicio" class="hero-section">
+
+            <div class="container-desktop">
+
+                <div class="hero-content">
+
+                    <div class="hero-text">
+                        <h1 class="animate__animated animate__zoomInUp">Casa do Sorvete</h1>
+                        <span class="tagline">Sabor que Alavanca Negócios</span>
+                        <p>
+                            Fornecemos qualidade, padrão e logística eficiente para revendedores, 
+                            comércios e eventos. Agregamos valor ao seu cardápio com produtos 
+                            regionais que garantem a satisfação do seu cliente final.
+                        </p>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+            
+        </section>
+
+
+        <section class="info-card">
+            <h1>O que fazemos e fornecemos na nossa empresa</h1>
+            <p>qualidade, padrão e entrega garantida para seu negócio ou consumo próprio</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="/Image/mirtilo.png" alt="Açaí">
+                    <h3>Açaí e Juçara</h3>
+                    <p>O verdadeiro sabor regional, puro e selecionado.</p>
+                </div>
+                <div class="card">
+                    <img src="/Image/sorvete.png" alt="Sorvete">
+                    <h3>Sorvetes artesanais</h3>
+                    <p>Diversos sabores clássicos e especiais com textura única.</p>
+                </div>
+                <div class="card">
+                    <img src="/Image/creme.png" alt="Cremes">
+                    <h3>Cremes variados</h3>
+                    <p>Complementos perfeitos para turbinar o seu cardápio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="products">
+            <h2>Nossos produtos</h2>
+    
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="/Image/saboressorveteajustado.png" alt="Produto 1" class="slide">
+                    <img src="/Image/627494369_17849244759670686_4281385581091749039_n.jpg" alt="Produto 2" class="slide">
+                    <img src="Image/Juçara-na-mão.png" alt="Produto 3" class="slide">
+                    <img src="Image/Bacuri e Morango.png" alt="Produto 4" class="slide">
+                    <img src="Image/Cupuaçu e Abacaxi.png" alt="Produto 5" class="slide">
+                    <img src="Image/pote-de-açai.png" alt="Produto 6" class="slide">
+                </div>
+        
+                <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+            <a href="https://wa.me/5598989170596?text=Olá! Gostaria de fazer um pedido ou saber mais sobre os produtos da Casa do Sorvete." 
+                target="_blank" 
+                style="text-decoration: none;">
+                <button id="contato" class="btn-contato">ENTRE EM CONTATO</button>
+            </a>
+        </section
+
+        <section class="faq-section">
+            <h2 class="faq-txt-h2">Dúvidas Frequentes</h2>
+    
+            <div id="faq"   class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Quais tamanhos de sorvete vocês vendem?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Vendemos unidades de Sorvete de 1, 5 e 10L. Açaí de 1, 5 e 10L e Juçara de 1 Litro.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Vocês vendem no atacado?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Fazemos no atacado para revenda, lojistas e comércios em geral.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Onde posso consumir os produtos?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não temos atendimento no local. Trabalhamos apenas com delivery e retirada.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Qual a área de entrega de vocês?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Entregamos em todo o estado do Maranhão!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+    </main>
+
+    <footer>
+        <p>© 2026 Casa do Sorvete - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-links');
+
+        menu.addEventListener('click', function() {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+
+        let currentIdx = 0;
+
+        function moveSlide(direction) {
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            const container = document.querySelector('.carousel-slide');
+
+            currentIdx += direction;
+
+        if (currentIdx >= totalSlides) {
+            currentIdx = 0;
+        } else if (currentIdx < 0) {
+            currentIdx = totalSlides - 1;
+        }
+
+        const offset = -currentIdx * 100;
+        container.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Opcional: Auto-play a cada 5 segundos
+        setInterval(() => moveSlide(1), 5000);
+
+        document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqItem = button.parentElement;
+            const icon = button.querySelector('.icon');
+
+            // Fecha outros itens abertos (opcional)
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                    item.querySelector('.icon').textContent = '+';
+                }
+            });
+
+            // Alterna o item atual
+            faqItem.classList.toggle('active');
+            
+            // Muda o ícone de + para -
+            if (faqItem.classList.contains('active')) {
+                icon.textContent = '-';
+            } else {
+                icon.textContent = '+';
+            }
+        });
+    });
+
+    </script>
+
+    <a href="https://wa.me/5598989170596?text=Olá! Vim pelo site da Casa do Sorvete e gostaria de mais informações." 
+   class="whatsapp-float animate__animated animate__fadeInRight" 
+   target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+</body>
+</html>
